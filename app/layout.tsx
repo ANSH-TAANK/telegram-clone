@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import{
+  ClerkProvider,
+}from "@clerk/nextjs"
+import ConvexClientProvider from "@/components/ConvexClientProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,15 +24,27 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode; 
 }>) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ClerkProvider
+        signInFallbackRedirectUrl="/dashboard"
+        signUpFallbackRedirectUrl="/dashboard"      
+        >
+          <ConvexClientProvider>
+            {children}
+          </ConvexClientProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
 }
+
+//childern ko wrap karne ka matlab hai ki jo bhi page ham ab access karnege vo convex and clerk ke under hoga
+// children ko wrap karne ka matlab hai ki hamare saare pages 
+// ab Clerk aur Convex ke context ke andar honge, 
+// isliye unhe directly unke features ka access milega.
