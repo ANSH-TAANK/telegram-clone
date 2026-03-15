@@ -1,38 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Beam
 
-## Getting Started
+Beam is a modern web application built with **Next.js** and deployed on **Vercel**.  
+The project is designed to provide a clean, responsive, and fast user experience while demonstrating modern frontend development practices.
 
-First, run the development server:
+## Live Demo
+
+🔗 **Project Link:**  
+https://beam-anshtaank24-5501-ansh-taanks-projects.vercel.app?_vercel_share=pe6lNKkPQcx2EwXpXP009h8gRP15x8Ku
+
+## Overview
+
+Beam is developed using the latest **Next.js** framework features and follows a modern project structure.  
+It highlights responsive design, component-based architecture, and efficient deployment using Vercel.
+
+This project can be used as a strong portfolio piece to showcase frontend development skills, clean UI design, and web deployment knowledge.
+
+## Features
+
+- Built with **Next.js**
+- Uses modern **App Router** structure
+- Clean and responsive user interface
+- Fast development and optimized performance
+- Easy deployment using **Vercel**
+- Scalable project structure for future enhancements
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Library:** React
+- **Language:** TypeScript
+- **Deployment:** Vercel
+- **Font Optimization:** `next/font`
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-this is the link  https://beam-anshtaank24-5501-ansh-taanks-projects.vercel.app/
+app/
+  page.tsx        # Main page
+public/           # Static assets
+package.json      # Project dependencies and scripts
+next.config.ts    # Next.js configuration
+tsconfig.json     # TypeScript configuration
